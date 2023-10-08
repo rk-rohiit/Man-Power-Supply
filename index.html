@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <title>Responsive Navigation Menu</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav>
         <div class="logo">
             Brain Coder
@@ -20,26 +21,174 @@
         </label>
         <ul>
             <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#workFlow">Servise</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#">Login</a></li>
         </ul>
     </nav>
+
+   
+    
+    <!-- Hero Section -->
     <div class="content">
         <main>
-            <div class="container">
+            <div class="hero-container">
                 <img src="./images/herobg.jpg" alt="">
                 <div class="hero-text">
-                    <h1>Our Supply Chain Managment System</h1>
-                    <p>Your First Choise Is Our man Power Supply Chain !
-                    </p>
-                    <button>Join Now</button>
+                    <h3><span style="font-size: 1.5em;">O</span>ur Supply Chain Management System</h3>
+                    <p>Your First Choice Is Our Manpower Supply Chain!</p>
+                    <button class="openButton" id="submit" onclick="openForm()">Join Now</button>
+                    
+    <div class="loginPopup" style="margin-top: 0 auto;">
+        <div class="formPopup" id="popupForm">
+          <form action="\" class="formContainer">
+            <h3>Thank You !! For Joining Us</h3>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
                 </div>
             </div>
-        </main>
+    </div>
+    </main>
+    </div>
+    <hr>
+
+    <!-- About us -->
+
+    <section id="about">
+        <div class="about-left">
+            <img src="./images/tm1.jpg" alt="">
+        </div>
+        <div class="about-right">
+            <h2 class="about-heading">About Us</h2>
+            <p class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam blanditiis
+                quas assumenda nam error vel dolores suscipit ad, sapiente deleniti ipsum, obcaecati perspiciatis.</p>
+            <!-- <a href="" class="btn"> Our Work</a> -->
+        </div>
+    </section>
+
+    <hr>
+<!-- Our Members -->
+    <section id="workFlow">
+        <h2 class="heading"> Grow Up Your Workflow Speed. </h2>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, commodi sint. <br>Ipsam molestias
+            nemovel laboriosam consequatur, perferendis<br> minima soluta? Natus necessitatibus autem suscipit!</p>
+        <div class="num-container">
+            <div class="num-item"><img src="./images/tm1.jpg" alt="" class="workflow-img"><br><span>27,882
+                    <br>Customers</span></div>
+            <div class="num-item"><img src="./images/tm1.jpg" alt="" class="workflow-img"><br><span>90% <br>Action
+                    Plans</span></div>
+            <div class="num-item"><img src="./images/tm1.jpg" alt="" class="workflow-img"><br><span>70,592
+                    <br>Downloads</span></div>
+        </div>
+    </section>
+    <hr>
+
+     <!-- Team Members -->
+
+
+     <div class="wrapper">
+        <h1 class="tm-header">Team Members</h1>
+        <ul class="carousel">
+            <li class="card">
+                <div class="img"><img src="./images/tm1.jpg" alt="img" draggable="false"></div>
+                <h2>Blanche Pearson</h2>
+                <span>Sales Manager</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="./images/tm1.jpg" alt="img" draggable="false"></div>
+                <h2>Joenas Brauers</h2>
+                <span>Web Developer</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="./images/tm1.jpg" alt="img" draggable="false"></div>
+                <h2>Lariach French</h2>
+                <span>Online Teacher</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="./images/tm1.jpg" alt="img" draggable="false"></div>
+                <h2>James Khosravi</h2>
+                <span>Freelancer</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="./images/tm1.jpg" alt="img" draggable="false"></div>
+                <h2>Kristina Zasiadko</h2>
+                <span>Bank Manager</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="./images/tm1.jpg" alt="img" draggable="false"></div>
+                <h2>Donald Horton</h2>
+                <span>App Designer</span>
+            </li>
+        </ul>
     </div>
 
+    <!-- Contact -->
+
+
+    
+<!-- contact section starts  -->
+
+<div class="contact-form" id="contact">
+    <h1>Contact Us</h1>
+    <div class="container">
+        <div class="main">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name">
+                  
+                    <input type="email" name="name" placeholder="Enter Your Email">
+                    <textarea name="message" placeholder="Your Message"></textarea>                   
+         <button type="submit" class="btn">Send <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+            <div class="form-img">
+                <img src="./images/contact.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div> 
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-section">
+            <div class="footer-item">
+                <h2>Company</h2>
+                <p><a href=""> About Us</a></p>
+                <p><a href=""> Contact Us</a></p>
+                <p><a href=""> Our Services</a></p>
+                <p><a href=""> Privacy Policy</a></p>
+            </div>
+            <div class="footer-item">
+                <h2>Get Help </h2>
+                <p><a href=""> FAQ</a></p>
+                <p><a href=""> Shipping </a></p>
+                <p><a href=""> Retuns </a></p>
+                <p><a href=""> Payment Options </a></p>
+            </div>
+            <div class="footer-item">
+                <h2>Online Shop</h2>
+                <p><a href=""> Blogs </a></p>
+                <p><a href=""> Watch </a></p>
+                <p><a href=""> Shoes </a></p>
+                <p><a href=""> Bress </a></p>
+            </div>
+            <div class="footer-item social">
+                <h2> Follow Us </h2>
+                <ul>
+                    <li> <i class="fa-brands fa-instagram"></i> </li>
+                    <li> <i class="fa-brands fa-linkedin-in"></i> </li>
+                    <li> <i class="fa-brands fa-youtube"></i> </li>
+                    <li> <i class="fa-brands fa-twitter"></i> </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/ddace8a3f2.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
