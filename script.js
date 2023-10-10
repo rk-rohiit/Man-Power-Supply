@@ -14,6 +14,8 @@ function openForm() {
     document.getElementById("popupForm").style.display = "none";
   }
 
+  // Curosel
+  
   // Block Inspect Mode
 
   document.addEventListener('contextmenu', function (e) {
