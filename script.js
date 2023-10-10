@@ -1,3 +1,10 @@
+
+//Loader
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader-wrapper");
+    loader.style.display = "none"; // Hide the loader
+});
+
 // Open Join Now Button
 
 function openForm() {
