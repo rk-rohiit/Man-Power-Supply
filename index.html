@@ -31,9 +31,11 @@
             <li><a href="#about">About</a></li>
             <li><a href="#workFlow">Service</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a id="join-us-button">Login</a></li>
         </ul>
     </nav>
+
+
 
     <!-- Hero Section -->
     <div class="content">
@@ -43,11 +45,12 @@
                 <div class="hero-text">
                     <h3><span style="font-size: 1.5em;">O</span>ur Supply Chain Management System</h3>
                     <p>Your First Choice Is Our Manpower Supply Chain!</p>
-                    <button class="openButton" id="submit" onclick="openForm()">Join Now</button>
+                    <button class="openButton" onclick="openForm()">Join Now</button>
 
                     <div class="formPopup" id="popupForm">
                         <img id="image" src="./images/tm1.jpg" alt="">
                         <h2>Thank You!</h2>
+                        <hr>
                         <p>Thank you, sir! Your form has been successfully submitted</p>
                         <button type="button" id="close" onclick="closeForm()">OK</button>
                     </div>
@@ -56,7 +59,7 @@
         </main>
     </div>
     <hr>
-    
+
     <!-- About us -->
     <section id="about">
         <div class="about-left">
@@ -94,8 +97,10 @@
         <ul class="carousel">
             <li class="card">
                 <div class="img"><img src="./images/tm1.jpg" alt="img" draggable="false"></div>
-                <h2>Blanche Pearson</h2>
-                <span>Sales Manager</span>
+                <div>
+                    <h2>Blanche Pearson</h2>
+                    <span>Sales Manager</span>
+                </div>
             </li>
             <li class="card">
                 <div class="img"><img src="./images/tm1.jpg" alt="img" draggable="false"></div>
