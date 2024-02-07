@@ -43,7 +43,7 @@
 nav {
     position: fixed;
     display: flex;
-    height: 80px;
+    height: 10vh;
     width: 100%;
     background: #1b1b1b;
     align-items: center;
@@ -156,7 +156,7 @@ input[type="checkbox"] {
 
 /* Hero Section */
 .hero-container {
-    height: 600px;
+    height: 95vh;
     padding: 20px;
     margin-left: 40px;
     margin-right: 40px;
@@ -735,6 +735,9 @@ a {
 .footer-item {
     margin: 1rem;
 }
+/* .footer-item p a{
+    cursor: pointer;
+} */
 
 .footer-item ul {
     display: flex;
